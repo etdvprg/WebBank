@@ -1,5 +1,4 @@
 # WebBank
----
 
 ## Introduction
 WebBank is an experimental Java web application designed to simulate a basic banking system. It would use Java
