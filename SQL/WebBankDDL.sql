@@ -11,6 +11,9 @@ CREATE TABLE users (
 CREATE TABLE accounts (
 	ID INT NOT NULL AUTO_INCREMENT,
     user_id INT DEFAULT NULL,
+    first_name CHAR(255) DEFAULT NULL,
+    middle_name CHAR(255) DEFAULT NULL,
+    last_name CHAR(255) DEFAULT NULL,
     number VARCHAR(45) DEFAULT NULL,
     type VARCHAR(45) DEFAULT NULL,
     balance DECIMAL(10, 2) DEFAULT NULL,
