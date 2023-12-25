@@ -1,0 +1,33 @@
+CREATE DATABASE web_bank;
+
+CREATE TABLE users (
+	ID INT NOT NULL AUTO_INCREMENT,
+    name VARCHAR(255) DEFAULT NULL,
+    password VARCHAR(255) DEFAULT NULL,
+    PRIMARY KEY (ID),
+    UNIQUE KEY name_UQ (name)
+);
+
+CREATE TABLE accounts (
+	ID INT NOT NULL AUTO_INCREMENT,
+    user_id INT DEFAULT NULL,
+    number VARCHAR(45) DEFAULT NULL,
+    type VARCHAR(45) DEFAULT NULL,
+    balance DECIMAL(10, 2) DEFAULT NULL,
+    PRIMARY KEY (ID),
+    FOREIGN KEY (user_id) REFERENCES users(ID)
+);
+
+CREATE TABLE transactions (
+	ID INT NOT NULL AUTO_INCREMENT,
+    sender_id INT DEFAULT NULL,
+    receiver_id INT DEFAULT NULL,
+    amount DECIMAL(10,2) DEFAULT NULL,
+    date DATE DEFAULT NULL,
+    PRIMARY KEY (ID),
+    FOREIGN KEY (sender_id) REFERENCES accounts(ID),
+    FOREIGN KEY (receiver_id) REFERENCES accounts(ID)
+);
+
+
+
