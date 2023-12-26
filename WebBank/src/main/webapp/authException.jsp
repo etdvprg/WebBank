@@ -6,9 +6,7 @@
         <title>JSP Page</title>
     </head>
     <body>
-        <h1>Hello World!</h1>
-        <button>
-            <a href="/WebBank/login.jsp">Login</a>
-        </button>
+        <h1>Incorrect username or password</h1>
+        <button><a href="/WebBank/login.jsp">Return</a></button>
     </body>
 </html>

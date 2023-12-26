@@ -1,3 +1,9 @@
+<%-- 
+    Document   : bankIndex
+    Created on : Dec 26, 2023, 8:59:10 AM
+    Author     : EnceT
+--%>
+
 <%@page contentType="text/html" pageEncoding="UTF-8"%>
 <!DOCTYPE html>
 <html>
@@ -6,9 +12,6 @@
         <title>JSP Page</title>
     </head>
     <body>
-        <h1>Hello World!</h1>
-        <button>
-            <a href="/WebBank/login.jsp">Login</a>
-        </button>
+        <h1>Login Success!</h1>
     </body>
 </html>
