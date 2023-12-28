@@ -4,9 +4,25 @@
         <servlet-name>AuthLoginServlet</servlet-name>
         <servlet-class>com.AuthLoginServlet</servlet-class>
     </servlet>
+    <servlet>
+        <servlet-name>AccountRetrievalServlet</servlet-name>
+        <servlet-class>com.AccountRetrievalServlet</servlet-class>
+    </servlet>
+    <servlet>
+        <servlet-name>AuthLogoutServlet</servlet-name>
+        <servlet-class>com.AuthLogoutServlet</servlet-class>
+    </servlet>
     <servlet-mapping>
         <servlet-name>AuthLoginServlet</servlet-name>
         <url-pattern>/AuthLoginServlet</url-pattern>
+    </servlet-mapping>
+    <servlet-mapping>
+        <servlet-name>AccountRetrievalServlet</servlet-name>
+        <url-pattern>/AccountRetrievalServlet</url-pattern>
+    </servlet-mapping>
+    <servlet-mapping>
+        <servlet-name>AuthLogoutServlet</servlet-name>
+        <url-pattern>/AuthLogoutServlet</url-pattern>
     </servlet-mapping>
     <session-config>
         <session-timeout>

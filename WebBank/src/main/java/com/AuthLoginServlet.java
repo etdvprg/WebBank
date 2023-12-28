@@ -26,21 +26,19 @@ public class AuthLoginServlet extends HttpServlet {
         
         String SQLu = "root";
         String SQLp = "root";
-        
-        String hashedPassword = hashPassword(password);
-        
+                
         try {
             Class.forName("com.mysql.cj.jdbc.Driver");
             Connection conn = DriverManager.getConnection("jdbc:mysql://localhost:3306/web_bank?useSSL=false", SQLu, SQLp);
             PreparedStatement ps = conn.prepareStatement("SELECT * FROM users WHERE name = ? AND password = ?");
             ps.setString(1, username);
-            ps.setString(2, hashedPassword);
+            ps.setString(2, hashPassword(password));
 
             ResultSet rs = ps.executeQuery();
             if (rs.next()) {
                 HttpSession session = request.getSession();
                 session.setAttribute("user", username);
-                response.sendRedirect("/WebBank/bankIndex.jsp");
+                response.sendRedirect("/WebBank/authSuccess.jsp");
             } else {
                 response.sendRedirect("/WebBank/authException.jsp");
             }
