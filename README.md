@@ -6,6 +6,6 @@ technologies, MySQL, and JDBC to interact with the database and perform operatio
 a practical understanding of how a real-world banking system works. (with hopes on improving it as well)
 
 ## Features
-- **User Authentication**: Users can register, logi, and logout from the application.
-- **Account Management**: Users can view their account details and perform transactions.
-- **Error Handling**: The application includes error handling mechanisms to handle unexpected situations gracefully.
+- **User Authentication**: Users can login, and logout from the application.
+- **Account Management**: Users can view their account details.
+
