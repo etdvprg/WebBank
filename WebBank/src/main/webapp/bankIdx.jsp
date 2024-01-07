@@ -14,9 +14,15 @@
         <h1>Bank Account Details</h1>
         <% if (account != null) {%>
         <p>Account ID: <%= account.getId()%></p>
+        <% if (account.getFirstName() != null) {%>
         <p>First Name: <%= account.getFirstName()%></p>
+        <% } %>
+        <% if (account.getMiddleName() != null) {%>
         <p>Middle Name: <%= account.getMiddleName()%></p>
+        <% } %>
+        <% if (account.getLastName() != null) {%>
         <p>Last Name: <%= account.getLastName()%></p>
+        <% }%>
         <p>Account Number: <%= account.getNumber()%></p>
         <p>Account Type: <%= account.getType()%></p>
         <p>Balance: <%= account.getBalance()%></p>
