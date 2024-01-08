@@ -8,4 +8,6 @@ a practical understanding of how a real-world banking system works. (with hopes 
 ## Features
 - **User Authentication**: Users can login, and logout from the application.
 - **Account Management**: Users can view their account details.
+- **Money Transfer**: Users can _remit_ money to other users found in the database. 
+  
 
