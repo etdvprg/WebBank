@@ -1,5 +1,6 @@
 <%@page import="com.Account"%>
 <%@ page import="javax.servlet.http.HttpSession" %>
+
 <%
     Account account = (Account) session.getAttribute("account");
 %>
@@ -30,6 +31,8 @@
         <p>No account details found.</p>
         <% }%>
     </body>
+    
+    <a href="/WebBank/bankXfer.jsp"><button>Bank Transfer</button></a>
     
     <form action="/WebBank/AuthLogoutServlet" method="GET">
         <input type="submit" value="Logout">
