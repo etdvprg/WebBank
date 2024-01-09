@@ -16,6 +16,10 @@
         <servlet-name>BankTransferServlet</servlet-name>
         <servlet-class>com.BankTransferServlet</servlet-class>
     </servlet>
+    <servlet>
+        <servlet-name>BankIdxFwdServlet</servlet-name>
+        <servlet-class>com.BankIdxFwdServlet</servlet-class>
+    </servlet>
     <servlet-mapping>
         <servlet-name>AuthLoginServlet</servlet-name>
         <url-pattern>/AuthLoginServlet</url-pattern>
@@ -31,6 +35,10 @@
     <servlet-mapping>
         <servlet-name>BankTransferServlet</servlet-name>
         <url-pattern>/BankTransferServlet</url-pattern>
+    </servlet-mapping>
+    <servlet-mapping>
+        <servlet-name>BankIdxFwdServlet</servlet-name>
+        <url-pattern>/BankIdxFwdServlet</url-pattern>
     </servlet-mapping>
     <session-config>
         <session-timeout>

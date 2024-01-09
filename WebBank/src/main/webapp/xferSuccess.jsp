@@ -25,6 +25,8 @@
         <p>No transaction details found.</p>
         <% }%>
         
-        <a href="/WebBank/bankIdx.jsp"><button>Return</button></a>
+         <form action="/WebBank/AccountRetrievalServlet" method="GET">
+            <input type="submit" value="Return">
+        </form>
     </body>
 </html>
