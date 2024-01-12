@@ -32,7 +32,17 @@
         <% }%>
     </body>
     
-    <a href="/WebBank/bankXfer.jsp"><button>Bank Transfer</button></a>
+    
+    <a href="/WebBank/bankXfer.jsp"><button>Bank Transfer</button></a><br>
+    
+    <br>
+    <form action="/WebBank/TransactionHistoryServlet" method="POST">
+        <input type="hidden" name="accountId" value="<%= account.getId()%>">
+        <input type="submit" value="View Transaction History">
+    </form>
+    <br>
+    
+    
     
     <form action="/WebBank/AuthLogoutServlet" method="GET">
         <input type="submit" value="Logout">

@@ -1,20 +1,20 @@
 package com;
 
-import java.sql.Date;
+import java.sql.*;
 
 public class Transaction {
     private String transactionId;
     private int senderId;
     private int receiverId;
     private double amount;
-    private Date date;
-
-    public Transaction(String transactionId, int senderId, int receiverId, double amount, Date date) {
+    private Timestamp tmp;
+    
+    public Transaction(String transactionId, int senderId, int receiverId, double amount, Timestamp tmp) {
         this.transactionId = transactionId;
         this.senderId = senderId;
         this.receiverId = receiverId;
         this.amount = amount;
-        this.date = date;
+        this.tmp = tmp;
     }
 
     public String getTransactionId() {
@@ -33,7 +33,7 @@ public class Transaction {
         return amount;
     }
 
-    public Date getDate() {
-        return date;
+    public Timestamp getDate() {
+        return tmp;
     }
 }

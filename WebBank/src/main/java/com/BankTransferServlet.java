@@ -36,15 +36,14 @@ public class BankTransferServlet extends HttpServlet {
 
             String transactionID = UUID.randomUUID().toString();
             
-            String sqlTransact = "INSERT INTO transactions (id, sender_id, receiver_id, amount, date) VALUES (?, ?, ?, ?, CURDATE())";
+            String sqlTransact = "INSERT INTO transactions (id, sender_id, receiver_id, amount, date) VALUES (?, ?, ?, ?, CURRENT_TIMESTAMP())";
             PreparedStatement stmtTransact = conn.prepareStatement(sqlTransact, Statement.RETURN_GENERATED_KEYS);
             stmtTransact.setString(1, transactionID);
             stmtTransact.setInt(2, currentAccount.getId());
             stmtTransact.setInt(3, recipientId);
             stmtTransact.setDouble(4, remitAmount);
             stmtTransact.executeUpdate();
-            
-            
+         
             
             String sqlUpdateCurrentAccount = "UPDATE accounts SET balance = balance - ? WHERE id = ?";
             PreparedStatement stmtUpdateCurrentAccount = conn.prepareStatement(sqlUpdateCurrentAccount);

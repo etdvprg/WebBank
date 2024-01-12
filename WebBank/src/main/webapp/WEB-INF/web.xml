@@ -20,6 +20,10 @@
         <servlet-name>BankIdxFwdServlet</servlet-name>
         <servlet-class>com.BankIdxFwdServlet</servlet-class>
     </servlet>
+    <servlet>
+        <servlet-name>TransactionHistoryServlet</servlet-name>
+        <servlet-class>com.TransactionHistoryServlet</servlet-class>
+    </servlet>
     <servlet-mapping>
         <servlet-name>AuthLoginServlet</servlet-name>
         <url-pattern>/AuthLoginServlet</url-pattern>
@@ -39,6 +43,10 @@
     <servlet-mapping>
         <servlet-name>BankIdxFwdServlet</servlet-name>
         <url-pattern>/BankIdxFwdServlet</url-pattern>
+    </servlet-mapping>
+    <servlet-mapping>
+        <servlet-name>TransactionHistoryServlet</servlet-name>
+        <url-pattern>/TransactionHistoryServlet</url-pattern>
     </servlet-mapping>
     <session-config>
         <session-timeout>
