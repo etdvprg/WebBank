@@ -7,8 +7,6 @@
 <%
     Account account = (Account) session.getAttribute("account");
     List<Transaction> transactions = (List<Transaction>) session.getAttribute("transactions");
-    System.out.println("Transactions in session: " + transactions);
-
 %>
 
 <!DOCTYPE html>

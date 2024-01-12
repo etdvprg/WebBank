@@ -17,10 +17,6 @@
         <servlet-class>com.BankTransferServlet</servlet-class>
     </servlet>
     <servlet>
-        <servlet-name>BankIdxFwdServlet</servlet-name>
-        <servlet-class>com.BankIdxFwdServlet</servlet-class>
-    </servlet>
-    <servlet>
         <servlet-name>TransactionHistoryServlet</servlet-name>
         <servlet-class>com.TransactionHistoryServlet</servlet-class>
     </servlet>
@@ -39,10 +35,6 @@
     <servlet-mapping>
         <servlet-name>BankTransferServlet</servlet-name>
         <url-pattern>/BankTransferServlet</url-pattern>
-    </servlet-mapping>
-    <servlet-mapping>
-        <servlet-name>BankIdxFwdServlet</servlet-name>
-        <url-pattern>/BankIdxFwdServlet</url-pattern>
     </servlet-mapping>
     <servlet-mapping>
         <servlet-name>TransactionHistoryServlet</servlet-name>
