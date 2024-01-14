@@ -8,11 +8,12 @@
     </head>
     <body>
         <header>
-            <div style="float: right; margin-top: 10px;">
-                <a href="/WebBank/login.jsp"><button>Login</button></a>
+            <div class="bank-entity">
+                <h1>Web Bank</h1>
             </div>
-            <h1>Web Bank</h1>
-            <p>Pioneer in Java banking</p>
+            <div class="go-login">
+                <a class="login" href="/WebBank/login.jsp">Log-in!</a>
+            </div>
         </header>
         
         <main>
